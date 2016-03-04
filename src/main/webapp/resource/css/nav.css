@@ -1,0 +1,36 @@
+body{background-color:#F0F0F0;position:relative;}
+
+#head{width:100%;height:5vh;background-color: #ffffff;}
+
+#home{margin-left:5vw; height:5vh;width:5vw; float:left;}
+
+#home a{color:#B0E0E6 ;text-decoration:none;height:5vh;}
+#home a span{color:#333 ;text-decoration:none;margin-top:0vh;font-size:4vh;font-weight:bold}
+#home a:hover{font:color:#FFFFFF;text-decoration:none;}
+
+#home1{margin-left:2vw; height:4vh;width:8%; float:left;margin-top:0.5vh;}
+#home1 a{color:#B0E0E6 ; text-decoration:none;}
+#home1 a span{color:#333 ;text-decoration:none;font-size:3vh;font-weight:bold}
+#home1 a:hover{color:#FFFFFF;text-decoration:none;}
+
+
+#login_register{margin-left:41vw;width:14vw;float:left;height:4vh;margin-top:0.5vh;}
+#login_register button{height:4vh;font-size:2vh;}
+
+
+#search_id{margin-left:2vw;width:20vw;float:left;height:4vh;margin-top:0.5vh;}
+#search_id input{width:16vw;float:left;height:4vh;}
+
+#search_id button{width:4vw;float:left;height:4vh;}
+#search_id button span{height:4vh;font-size:2vh;}
+
+
+#copy_right
+{
+	position:relative;
+    float:left;
+	margin-top:3vh;
+	width:30%;
+	margin-left:32%;
+}
+

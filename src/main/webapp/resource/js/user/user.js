@@ -1,0 +1,44 @@
+$(document).ready(function(){     
+	  $("#update_information").click(function(){
+        		 $.ajax({     
+					    url:"updateUser",
+						type:"POST",
+						dataType:"json",
+						data:{"nickname":$("#nickname").val(),"email":$("#email").val()},
+						success:function(data){   
+							if(data.isI=="1"){
+							alert("资料更新成功");
+							location.reload();
+							}else{
+								alert("修改失败");
+							}
+						},
+						error:function(){
+							alert("请求失败");
+						}
+				 });
+             
+	  });
+	  $("#register_button").click(function(){
+	         if($("#username_id").val()==""||$("#password_id").val()==""||$("#email_id").val()==""){
+	        	   alert("用户名密码email不能为空");
+	        	 }else{   
+	        		 $.ajax({     
+						    url:"register",
+							type:"POST",
+							dataType:"json",
+							data:{"username":$("#username_id").val(),"password":$("#password_id").val(),"email":$("#email_id").val()},
+							success:function(data){   
+								if(data.isI=="1"){
+									location.reload();
+								}else{
+									alert("用户名或密码错误");
+								}
+							},
+							error:function(){
+								alert("请求失败");
+							}
+					 });
+	             }
+		  });
+});
